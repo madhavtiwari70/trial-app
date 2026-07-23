@@ -1,11 +1,15 @@
 [project]
-name = "blank-app-template"
+name = "divi-demo-console"
 version = "0.1.0"
-description = "A simple Streamlit app template."
+description = "Divi Demo Console — a data-driven Streamlit app for running Divi quantum demos."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11,<3.13"
 dependencies = [
     "streamlit>=1.60.0",
+    "qoro-divi",
+    "pyyaml",
+    "networkx",
+    "matplotlib",
 ]
 
 [tool.uv]
