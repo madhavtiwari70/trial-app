@@ -1,14 +1,13 @@
 [project]
-name = "divi-demo-console"
+name = "divi-molecular-ground-state-demo"
 version = "0.1.0"
-description = "Divi Demo Console — a data-driven Streamlit app for running Divi quantum demos."
+description = "Divi Molecular Ground State (VQE) demo — data-driven Streamlit app."
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [
     "streamlit>=1.60.0",
     "qoro-divi",
     "pyyaml",
-    "networkx",
     "matplotlib",
 ]
 
