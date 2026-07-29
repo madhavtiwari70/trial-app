@@ -33,6 +33,18 @@ def _resolve_method(name: str) -> ScipyMethod:
     return ScipyMethod[name.upper().replace("-", "_")]
 
 
+def _extract_scalar_losses(losses_history) -> list:
+    """vqe.losses_history is a list of dicts like {'0': np.float64(-0.638...)}.
+    Pull out the scalar value from each iteration."""
+    scalars = []
+    for entry in losses_history:
+        if isinstance(entry, dict):
+            scalars.append(float(next(iter(entry.values()))))
+        else:
+            scalars.append(float(entry))
+    return scalars
+
+
 @dataclass
 class MolecularResult:
     ground_state_energy: float
@@ -85,7 +97,7 @@ def run_from_config(cfg: dict, progress_callback=None) -> MolecularResult:
     )
     vqe.run()
 
-    loss_history = list(vqe.losses_history) if vqe.losses_history else []
+    loss_history = _extract_scalar_losses(vqe.losses_history) if vqe.losses_history else []
 
     return MolecularResult(
         ground_state_energy=vqe.best_loss,
