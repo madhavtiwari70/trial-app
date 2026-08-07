@@ -5,7 +5,7 @@ description = "Divi Molecular Ground State (VQE) demo — data-driven Streamlit 
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [
-    "streamlit>=1.60.0",
+    "streamlit>=1.61.0",
     "qoro-divi",
     "pyyaml",
     "matplotlib",

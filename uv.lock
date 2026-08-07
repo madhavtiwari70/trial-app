@@ -125,23 +125,23 @@ wheels = [
 
 [[package]]
 name = "autograd"
-version = "1.9.1"
+version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9d/ac/4a8b58364ba865ab545251edbe475e5a35326814a5d274a2211d33ed8a5d/autograd-1.9.1.tar.gz", hash = "sha256:7818c5c69ddf9efb7da74097bd741a4c7920133f41966f68537223a15ef798bc", size = 2566975, upload-time = "2026-07-02T07:43:58.255Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/67/1c/3c24ec03c8ba4decc742b1df5a10c52f98c84ca8797757f313e7bdcdf276/autograd-1.8.0.tar.gz", hash = "sha256:107374ded5b09fc8643ac925348c0369e7b0e73bbed9565ffd61b8fd04425683", size = 2562146, upload-time = "2025-05-05T12:49:02.502Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6e/ce/8c98e6604bb1ec9d03c8493c328185b69bb7533fe08f3640f0f3641bd9d1/autograd-1.9.1-py3-none-any.whl", hash = "sha256:b788bae3fa010cbffb4cfb7b8ba2a3f0daa6072a8506da6164c779fe9cf3e05a", size = 54387, upload-time = "2026-07-02T07:43:56.502Z" },
+    { url = "https://files.pythonhosted.org/packages/84/ea/e16f0c423f7d83cf8b79cae9452040fb7b2e020c7439a167ee7c317de448/autograd-1.8.0-py3-none-any.whl", hash = "sha256:4ab9084294f814cf56c280adbe19612546a35574d67c574b04933c7d2ecb7d78", size = 51478, upload-time = "2025-05-05T12:49:00.585Z" },
 ]
 
 [[package]]
 name = "autoray"
-version = "0.8.2"
+version = "0.8.4"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/bc/0f/2c627f36bf044c69b1e2945be3fd9f051103e7cb7020ca76142133b5352c/autoray-0.8.2.tar.gz", hash = "sha256:031637850b782cb0b8c0bcfd6a03f99e81e5a5deadbdc835e0471440f1ff0c0f", size = 1180274, upload-time = "2025-11-03T22:34:42.79Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/30/8f/c951dc8acf51db7554b075f184488400401472ad9aa25edffa9ed9982621/autoray-0.8.4.tar.gz", hash = "sha256:b4ce7066334279b216431a260bb5b5b84d87815e3295020a76d8701e43dc3432", size = 1321434, upload-time = "2025-12-05T01:42:25.539Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/aa/d9/d0aeba5f72236ab1397cf1203f0d2ea6a6f852f0f2a81cd5fbc2bc329087/autoray-0.8.2-py3-none-any.whl", hash = "sha256:e869f40c080e43d95d9ae1e22cf4e85bbfd8b71dc1c42df30a5cd9253ba4fa42", size = 935556, upload-time = "2025-11-03T22:34:41.094Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/49/bc1c2e3ca121f6468e0cd8d78a96ab2dcb65d0f003917f5d4edcaea103a2/autoray-0.8.4-py3-none-any.whl", hash = "sha256:287c366f2ba9d9c045ffa2b2421deea07439ed5a7f18b5d25b3a406d53b5c63c", size = 937489, upload-time = "2025-12-05T01:42:23.658Z" },
 ]
 
 [[package]]
@@ -461,7 +461,7 @@ requires-dist = [
     { name = "matplotlib" },
     { name = "pyyaml" },
     { name = "qoro-divi" },
-    { name = "streamlit", specifier = ">=1.60.0" },
+    { name = "streamlit", specifier = ">=1.61.0" },
 ]
 
 [[package]]
@@ -656,30 +656,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/91/f6/e73969782a2ecec280f8a176f2476149dd9dba69d5f8779ec6108a7721e6/gast-0.7.0.tar.gz", hash = "sha256:0bb14cd1b806722e91ddbab6fb86bba148c22b40e7ff11e248974e04c8adfdae", size = 33630, upload-time = "2025-11-29T15:30:05.266Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1d/33/f1c6a276de27b7d7339a34749cc33fa87f077f921969c47185d34a887ae2/gast-0.7.0-py3-none-any.whl", hash = "sha256:99cbf1365633a74099f69c59bd650476b96baa5ef196fec88032b00b31ba36f7", size = 22966, upload-time = "2025-11-29T15:30:03.983Z" },
-]
-
-[[package]]
-name = "gitdb"
-version = "4.0.12"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "smmap" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/72/94/63b0fc47eb32792c7ba1fe1b694daec9a63620db1e313033d18140c2320a/gitdb-4.0.12.tar.gz", hash = "sha256:5ef71f855d191a3326fcfbc0d5da835f26b13fbcba60c32c21091c349ffdb571", size = 394684, upload-time = "2025-01-02T07:20:46.413Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a0/61/5c78b91c3143ed5c14207f463aecfc8f9dbb5092fb2869baf37c273b2705/gitdb-4.0.12-py3-none-any.whl", hash = "sha256:67073e15955400952c6565cc3e707c554a4eea2e428946f7a4c162fab9bd9bcf", size = 62794, upload-time = "2025-01-02T07:20:43.624Z" },
-]
-
-[[package]]
-name = "gitpython"
-version = "3.1.55"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "gitdb" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/b2/ab/ba0d29f2fa2277ed6256b2ac09003494045355f3a10bf32f351761287870/gitpython-3.1.55.tar.gz", hash = "sha256:781e3b1624dad81b24e9524bf0297b69786a0706db2cbceec1e2b05c38e5152f", size = 225071, upload-time = "2026-07-23T02:52:43.246Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/20/6a/d3b8208d2f8aac66abe8ccc1c23fa2c89464ec42cc71a601e95d05902428/gitpython-3.1.55-py3-none-any.whl", hash = "sha256:7c9ec1e69c158c081632ab35c41471e302c96db2ae42165036a5d2403378812e", size = 216590, upload-time = "2026-07-23T02:52:41.932Z" },
 ]
 
 [[package]]
@@ -1220,7 +1196,7 @@ wheels = [
 
 [[package]]
 name = "pennylane"
-version = "0.44.1"
+version = "0.45.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appdirs" },
@@ -1241,7 +1217,7 @@ dependencies = [
     { name = "typing-extensions" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/47/05/ecc73c5bc4c3392b86cfec1f7e5229381e3bffeb2786c287b898a75d9905/pennylane-0.44.1-py3-none-any.whl", hash = "sha256:ec54742b614bdfa39431e48cc4e2652c657e35e6dbecef663da679232cbab8c7", size = 5279911, upload-time = "2026-03-10T20:44:40.231Z" },
+    { url = "https://files.pythonhosted.org/packages/1d/b1/87dcc5c26dd73cf44897b98f8276bc39c38a7300ee0c40a7e507ded03d56/pennylane-0.45.1-py3-none-any.whl", hash = "sha256:b8cc7f590c43281b6e35b3a35707e9583c6b7babeb31dcf6f1cbde32a754ab93", size = 5414360, upload-time = "2026-06-26T21:40:32.556Z" },
 ]
 
 [[package]]
@@ -1706,7 +1682,7 @@ wheels = [
 
 [[package]]
 name = "qoro-divi"
-version = "0.12.1"
+version = "0.13.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "basis-set-exchange" },
@@ -1734,9 +1710,9 @@ dependencies = [
     { name = "stim" },
     { name = "sympy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3e/82/88926f61df2c9cbe26ac7f9e6d020157fd352d836f52bc0e2248ab19b0f9/qoro_divi-0.12.1.tar.gz", hash = "sha256:33f8afb6bff0010f665431fc54e82e228e6c2149b9edb32186d9aae3a09f8b26", size = 14865886, upload-time = "2026-06-09T13:02:33.847Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/1e/cb1426fc30f025dbf81b96eda48f98516af615c9ceeb535a2674d80a6f0f/qoro_divi-0.13.0.tar.gz", hash = "sha256:fd80a1934b45cf69ab345f54315d015632d7caa54584ee36ebd7d21e01eb53e0", size = 18211227, upload-time = "2026-07-29T15:21:07.125Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/67/5fcf77edbb0039b8a593f7d8a9ce3f50b08837e36ee834d47e2ad7c1a3ac/qoro_divi-0.12.1-py3-none-any.whl", hash = "sha256:4694ab8399357e7ebeabf8c27f7c5710c4b15b2355ce7fde2c8b1b265ac94d23", size = 14232423, upload-time = "2026-06-09T13:02:31.098Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/f7/2c8a0b92d042a43f8cee683fae2aba56a5f0ac7586c82580aa76e5471092/qoro_divi-0.13.0-py3-none-any.whl", hash = "sha256:afb52ec614bc9de440aab506d04791cab78d5bbf346dba09edac28af09e772b3", size = 17461450, upload-time = "2026-07-29T15:21:03.896Z" },
 ]
 
 [[package]]
@@ -1963,7 +1939,7 @@ resolution-markers = [
     "python_full_version < '3.12' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 dependencies = [
-    { name = "numpy", marker = "python_full_version < '3.12'" },
+    { name = "numpy" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/7a/97/5a3609c4f8d58b039179648e62dd220f89864f56f7357f5d4f45c29eb2cc/scipy-1.17.1.tar.gz", hash = "sha256:95d8e012d8cb8816c226aef832200b1d45109ed4464303e997c5b13122b297c0", size = 30573822, upload-time = "2026-02-23T00:26:24.851Z" }
 wheels = [
@@ -1999,7 +1975,7 @@ resolution-markers = [
     "python_full_version >= '3.12' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 dependencies = [
-    { name = "numpy", marker = "python_full_version >= '3.12'" },
+    { name = "numpy" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a7/25/c2700dfaf6442b4effaa91af24ebce5dc9d31bb4a69706313aae70d72cd0/scipy-1.18.0.tar.gz", hash = "sha256:67b2ad2ad54c72ca6d04975a9b2df8c3638c34ddd5b28738e94fc2b57929d378", size = 30774447, upload-time = "2026-06-19T15:01:43.456Z" }
 wheels = [
@@ -2042,15 +2018,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
-]
-
-[[package]]
-name = "smmap"
-version = "5.0.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1f/ea/49c993d6dfdd7338c9b1000a0f36817ed7ec84577ae2e52f890d1a4ff909/smmap-5.0.3.tar.gz", hash = "sha256:4d9debb8b99007ae47165abc08670bd74cb74b5227dda7f643eccc4e9eb5642c", size = 22506, upload-time = "2026-03-09T03:43:26.1Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/d4/59e74daffcb57a07668852eeeb6035af9f32cbfd7a1d2511f17d2fe6a738/smmap-5.0.3-py3-none-any.whl", hash = "sha256:c106e05d5a61449cf6ba9a1e650227ecfb141590d2a98412103ff35d89fc7b2f", size = 24390, upload-time = "2026-03-09T03:43:24.361Z" },
 ]
 
 [[package]]
@@ -2107,14 +2074,13 @@ wheels = [
 
 [[package]]
 name = "streamlit"
-version = "1.60.0"
+version = "1.61.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "altair" },
     { name = "anyio" },
     { name = "blinker" },
     { name = "click" },
-    { name = "gitpython" },
     { name = "httptools" },
     { name = "itsdangerous" },
     { name = "numpy" },
@@ -2134,9 +2100,9 @@ dependencies = [
     { name = "watchdog", marker = "sys_platform != 'darwin'" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7a/46/fa437e9651af1dbe7e5b28a754fd9c36df656e4a14a2b5ecc1bcd1d90587/streamlit-1.60.0.tar.gz", hash = "sha256:09f2fdd2aabbd3b3560953795681dd675d5479ac82c21fc2dceadaf9bd484ea3", size = 9819884, upload-time = "2026-07-21T21:13:58.04Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/aa/9d/93b4c6c0269e3ee7d71594562fefe94aad53864ca3c1479254285ec1c972/streamlit-1.61.0.tar.gz", hash = "sha256:1329482ff226db6ed85154584c32ad73a5f8019ade3e055536045c4ebe7e1b37", size = 9907089, upload-time = "2026-08-04T20:41:39.756Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2f/69/7a1984df015d01875c9ac79bfda7c31492cc94f81a2625303ce4707188e5/streamlit-1.60.0-py3-none-any.whl", hash = "sha256:d167d67cf94537600a6e378d8aa0c31eabab26beb243e2a51de9842e2872e393", size = 10419153, upload-time = "2026-07-21T21:13:55.113Z" },
+    { url = "https://files.pythonhosted.org/packages/0d/ce/bd7760b041053a39beb77297b15606790182ccb6e0889e5ed6febfac9b8b/streamlit-1.61.0-py3-none-any.whl", hash = "sha256:4d468f771be18340c05421295a03ee32b9c61383fb65d27f640df69d56e512ed", size = 10512864, upload-time = "2026-08-04T20:41:37.366Z" },
 ]
 
 [[package]]
