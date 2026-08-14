@@ -15,43 +15,43 @@ import streamlit as st
 HERE = os.path.dirname(__file__)
 DATA_DIR = os.path.join(HERE, "data")
 
-for demo_dir in [
-    "spin_dynamics", "economic_load_dispatch", "quantum_guided_cluster",
-    "travelling_salesman", "minimum_birkhoff_decomposition", "portfolio_optimization",
-]:
-    sys.path.insert(0, os.path.join(HERE, "demos", demo_dir))
-
 st.set_page_config(page_title="Divi Demo Console", layout="wide")
 
 DEMOS = {
     "Spin Dynamics (TFIM)": {
         "category": "Time Evolution",
         "data_file": "spin_dynamics.yaml",
+        "folder": "spin_dynamics",
         "module": "spin_dynamics_wrapper",
     },
     "Economic Load Dispatch": {
         "category": "Optimization · PCE-VQE",
         "data_file": "economic_load_dispatch.yaml",
+        "folder": "economic_load_dispatch",
         "module": "eld_wrapper",
     },
     "Quantum-Guided Cluster": {
         "category": "QAOA",
         "data_file": "quantum_guided_cluster.yaml",
+        "folder": "quantum_guided_cluster",
         "module": "qgc_wrapper",
     },
     "Travelling Salesman": {
         "category": "QAOA · QUBO",
         "data_file": "travelling_salesman.yaml",
+        "folder": "travelling_salesman",
         "module": "tsp_wrapper",
     },
     "Minimum Birkhoff Decomposition": {
         "category": "Optimization",
         "data_file": "minimum_birkhoff_decomposition.yaml",
+        "folder": "minimum_birkhoff_decomposition",
         "module": "birkhoff_wrapper",
     },
     "Portfolio Optimization": {
         "category": "QAOA",
         "data_file": "portfolio_optimization.yaml",
+        "folder": "portfolio_optimization",
         "module": "portfolio_wrapper",
     },
 }
@@ -106,6 +106,21 @@ with col_results:
                 status_box.info(f"Running: {name} ({i + 1}/{n})")
 
         import importlib
+
+        demos_root = os.path.join(HERE, "demos")
+
+        # Isolate imports: remove any other demo folders from sys.path, and
+        # drop any previously-imported module that came from a demo folder
+        # (e.g. two demos both ship a file named plotting.py — without this,
+        # switching demos in the same running session can silently import
+        # the wrong one).
+        sys.path[:] = [p for p in sys.path if not p.startswith(demos_root)]
+        for mod_name, mod in list(sys.modules.items()):
+            mod_file = getattr(mod, "__file__", None) or ""
+            if mod_file.startswith(demos_root):
+                del sys.modules[mod_name]
+
+        sys.path.insert(0, os.path.join(demos_root, demo["folder"]))
         module = importlib.import_module(demo["module"])
 
         with st.spinner("Executing on backend…"):
