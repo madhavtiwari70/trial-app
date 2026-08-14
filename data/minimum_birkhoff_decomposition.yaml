@@ -1,0 +1,9 @@
+# Minimum Birkhoff Decomposition — demo data file
+# Edit the values below to change the demo. No code changes needed.
+
+dim: 4                # matrix dimension: 3 or 4
+comb: 2                # number of permutations in the combination
+matrix_type: "sparse"  # "sparse" or "dense"
+instance: 1            # problem instance to load: 1-10
+iterations: 10         # max optimizer iterations
+optimizer: "Cobyla"    # "Cobyla" or "MonteCarlo"

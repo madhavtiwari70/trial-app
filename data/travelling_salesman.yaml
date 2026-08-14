@@ -1,0 +1,17 @@
+# Travelling Salesman Problem — demo data file
+# Edit the values below to change the demo. No code changes needed.
+# (This covers "Part A: Direct QAOA" from the original demo — the small,
+# fully-connected-qubit instance. The original demo's Part B/C variants
+# — partitioned QAOA on more cities, and PCE compression — aren't
+# included in this config-driven version.)
+
+n_cities: 4
+seed: 42
+
+qaoa:
+  n_layers: 3
+  max_iterations: 10
+
+backend:
+  use_cloud: false     # true = QoroService, false = local MaestroSimulator
+  shots: 20000

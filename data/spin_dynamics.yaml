@@ -1,0 +1,28 @@
+# Spin Dynamics (TFIM) — demo data file
+# Edit the values below to change the demo. No code changes needed.
+
+simulation:
+  n_qubits: 6
+  n_steps: 5
+  t_max: 3.0
+  n_points: 6
+  shots: 5000
+
+backend:
+  use_cloud: false     # true = QoroService, false = local MaestroSimulator
+
+experiments:
+  - name: "Ferromagnetic Phase"
+    J: 1.0
+    h: 0.2
+    initial_state: "zeros"       # "zeros" or a bitstring like "101010"
+
+  - name: "Paramagnetic Phase"
+    J: 1.0
+    h: 2.0
+    initial_state: "zeros"
+
+  - name: "Néel State Dynamics"
+    J: 1.0
+    h: 0.5
+    initial_state: "101010"
