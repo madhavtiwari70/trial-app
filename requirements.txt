@@ -1,9 +1,0 @@
-streamlit
-pyyaml
-qoro-divi[jupyter]==0.13.0
-dimod
-dwave-neal
-docplex
-cplex
-matplotlib
-numpy
