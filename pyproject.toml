@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [
     "streamlit>=1.60.0",
-    "qoro-divi[jupyter]==0.13.0",
+    "qoro-divi[jupyter]==0.14.0",
     "pyyaml",
     "matplotlib",
     "numpy",
